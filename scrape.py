@@ -9,6 +9,7 @@ html=urllib.urlopen(url).read()
 soup = BeautifulSoup(html)
 table = soup('span', { "class" : 'comments'})
 
+
 #numbers = [d.text.encode('utf-8') for d in table]
 #y = map(int, numbers)
 #y = sum(y)
